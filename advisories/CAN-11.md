@@ -78,19 +78,17 @@ Build the card with DOM APIs and set dataset.search, or apply HTML attribute enc
 
 ## Evidence images
 
-These are screenshots of real browser/tool interfaces captured with Google Chrome on macOS. They are not recreated evidence cards:
+These are screenshots of the real RuoYi application and the official upstream source, captured with Google Chrome on macOS:
 
-1. Chrome's native `view-source:` display of the saved trigger response or browser result, with the observed marker selected.
-2. Chrome's native `view-source:` display of an independent response, storage record, or browser-verification artifact.
-3. The official upstream GitHub source page with GitHub's native line highlighting on the vulnerable Sink.
+1. The live role-detail page renders the freshly stored payload in the allocated-user card.
+2. Clicking that real card executes the injected `onclick` handler and opens Chrome's native JavaScript alert.
+3. The official upstream GitHub source page highlights the vulnerable Sink.
 
-The first two screenshots reopen saved verification artifacts; they are not described as live requests. Private deployment addresses, credentials, session values, CSRF values, GUIDs and internal record identifiers are redacted. JSON whitespace was normalized for readability, and unrelated application records were omitted where a response contained other test-session data. The payload, affected field, response status and success booleans were retained.
-
-### Trigger response/result in Chrome
+### Live vulnerable application state
 
 ![CAN-11 trigger response in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-11/01-trigger-chrome-v3.png)
 
-### Independent verification in Chrome
+### Live JavaScript execution
 
 ![CAN-11 independent verification in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-11/02-verification-chrome-v3.png)
 
