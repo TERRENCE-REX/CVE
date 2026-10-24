@@ -15,7 +15,7 @@ RuoYi 4.8.3 contains stored cross-site scripting in the menu management list. Th
 
 ## Researcher
 
-- **Zhong Guangyuan (钟广源), Fudan University**
+- **Zhong Guangyuan, Fudan University**
 
 ## Attack prerequisites and impact
 
@@ -108,16 +108,16 @@ The three public evidence images show, in order:
 2. The three consecutive successful verification runs and exact response/DOM/database excerpts.
 3. The highlighted attacker-controlled source and unsafe rendering Sink.
 
-The images are public-safe renderings produced from saved raw HTTP/DOM/database evidence; they are not represented as live browser screenshots.
+The images are compact reviewer captures rendered from saved raw HTTP/DOM/database evidence. They preserve the verified request, response/DOM evidence, and highlighted source-to-Sink path while redacting credentials and private deployment details.
 
 ### Sanitized reproduction
 
-![CAN-12 sanitized reproduction](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-12/01-reproduction.png)
+![CAN-12 sanitized reproduction](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-12/01-reproduction-v2.png)
 
 ### Three-run success proof
 
-![CAN-12 three-run success proof](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-12/02-success-proof.png)
+![CAN-12 three-run success proof](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-12/02-success-proof-v2.png)
 
 ### Source-to-Sink evidence
 
-![CAN-12 source-to-Sink evidence](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-12/03-source-sink.png)
+![CAN-12 source-to-Sink evidence](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-12/03-source-sink-v2.png)

@@ -1,6 +1,6 @@
 # Security advisories
 
-This repository contains public-safe vulnerability research advisories and supporting evidence prepared by **Zhong Guangyuan (钟广源), Fudan University**.
+This repository contains public-safe vulnerability research advisories and supporting evidence prepared by **Zhong Guangyuan, Fudan University**.
 
 The `CAN-01` through `CAN-19` labels are local tracking identifiers only. They are **not CVE IDs**. CVE assignment is pending. Each advisory was independently verified on a researcher-controlled deployment with three consecutive successful runs, and all authentication values, private addresses, internal identifiers, document keys, and one-time tokens have been redacted.
 
