@@ -81,19 +81,13 @@ Pass Html::encode($bearerTokenModel->user->displayName) as the substitution, or 
 
 ## Evidence images
 
-These are screenshots of real browser/tool interfaces captured with Google Chrome on macOS. They are not recreated evidence cards:
+The first image is a direct screenshot from the real HumHub 1.18.6 deployment. The administrator workflow inserted the fresh marker `gt48261024f` into the page's executable context twice; Chrome reports both violations at `bearer-auth:548`. This deployment's nonce-CSP blocked the inline handler, while the stock 1.18.6 release does not send that deployment-specific CSP header. Only the ephemeral nonce text is redacted. The test users and bearer-token row were removed after capture, with zero residual rows confirmed.
 
-1. Chrome's native `view-source:` display of the saved trigger response or browser result, with the observed marker selected.
-2. Chrome's native `view-source:` display of an independent response, storage record, or browser-verification artifact.
-3. The official upstream GitHub source page with GitHub's native line highlighting on the vulnerable Sink.
+### Live trigger in the bearer-token administration page
 
-The first two screenshots reopen saved verification artifacts; they are not described as live requests. Private deployment addresses, credentials, session values, CSRF values, GUIDs and internal record identifiers are redacted. JSON whitespace was normalized for readability, and unrelated application records were omitted where a response contained other test-session data. The payload, affected field, response status and success booleans were retained.
+![CAN-19 live bearer-auth CSP evidence](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-19/01-trigger-chrome-v3.png)
 
-### Trigger response/result in Chrome
-
-![CAN-19 trigger response in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-19/01-trigger-chrome-v3.png)
-
-### Independent verification in Chrome
+### Saved independent verification artifact
 
 ![CAN-19 independent verification in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-19/02-verification-chrome-v3.png)
 

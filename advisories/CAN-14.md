@@ -75,21 +75,15 @@ Encode getDisplayName() before interpolation, or pass only plain text to the con
 
 ## Evidence images
 
-These are screenshots of real browser/tool interfaces captured with Google Chrome on macOS. They are not recreated evidence cards:
+The first two images are direct screenshots from the real HumHub 1.18.6 test deployment in Google Chrome on macOS. The fresh marker is `gt48261024a`; the temporary users and stored profile value were removed after capture, with zero residual rows confirmed. The third image is the official upstream source page.
 
-1. Chrome's native `view-source:` display of the saved trigger response or browser result, with the observed marker selected.
-2. Chrome's native `view-source:` display of an independent response, storage record, or browser-verification artifact.
-3. The official upstream GitHub source page with GitHub's native line highlighting on the vulnerable Sink.
+### Live trigger: injected image node in the friendship modal
 
-The first two screenshots reopen saved verification artifacts; they are not described as live requests. Private deployment addresses, credentials, session values, CSRF values, GUIDs and internal record identifiers are redacted. JSON whitespace was normalized for readability, and unrelated application records were omitted where a response contained other test-session data. The payload, affected field, response status and success booleans were retained.
+![CAN-14 live friendship confirmation modal](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-14/01-trigger-chrome-v3.png)
 
-### Trigger response/result in Chrome
+### Live application state: stored payload visible in the profile
 
-![CAN-14 trigger response in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-14/01-trigger-chrome-v3.png)
-
-### Independent verification in Chrome
-
-![CAN-14 independent verification in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-14/02-verification-chrome-v3.png)
+![CAN-14 live HumHub profile](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-14/02-verification-chrome-v3.png)
 
 ### Official source and Sink on GitHub
 
