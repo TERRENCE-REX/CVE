@@ -10,25 +10,25 @@ Evidence images are renderings made from saved HTTP, DOM, database, and source-c
 
 | Tracking ID | Product | Vulnerability | Advisory |
 | --- | --- | --- | --- |
-| CAN-01 | UReport 2.2.9 | Preview title reflected XSS | [Details](advisories/CAN-01.md) |
-| CAN-02 | UReport 2.2.9 | `customParameters` JavaScript-string XSS | [Details](advisories/CAN-02.md) |
-| CAN-03 | SpringBlade 5.0.2 | iframe route DOM XSS | [Details](advisories/CAN-03.md) |
-| CAN-04 | UReport 2.2.9 | Decoded exception-message reflected XSS | [Details](advisories/CAN-04.md) |
-| CAN-05 | UReport 2.2.9 | SQL-error stack stored XSS | [Details](advisories/CAN-05.md) |
-| CAN-06 | UReport 2.2.9 | `link-url` attribute stored XSS | [Details](advisories/CAN-06.md) |
-| CAN-07 | UReport 2.2.9 | Report-filename stored XSS in two views | [Details](advisories/CAN-07.md) |
-| CAN-08 | UReport 2.2.9 | Chart-label script-element escape | [Details](advisories/CAN-08.md) |
-| CAN-09 | UReport 2.2.9 | Font-family style-element escape | [Details](advisories/CAN-09.md) |
-| CAN-10 | UReport 2.2.9 | Search-form label stored XSS | [Details](advisories/CAN-10.md) |
-| CAN-11 | RuoYi 4.8.3 | Profile `userName` attribute stored XSS | [Details](advisories/CAN-11.md) |
-| CAN-12 | RuoYi 4.8.3 | Menu icon attribute stored XSS | [Details](advisories/CAN-12.md) |
-| CAN-13 | phpBB 3.3.19 | `rank_image` attribute stored XSS | [Details](advisories/CAN-13.md) |
-| CAN-14 | HumHub 1.18.6 | FriendshipButton display-name stored XSS | [Details](advisories/CAN-14.md) |
-| CAN-15 | HumHub User Location Map 1.2.5 | Popup stored XSS | [Details](advisories/CAN-15.md) |
-| CAN-16 | ONLYOFFICE for HumHub 4.0.0 | Notification stored XSS | [Details](advisories/CAN-16.md) |
-| CAN-17 | HumHub Q&A 1.1.3 | Answer display-name stored XSS | [Details](advisories/CAN-17.md) |
-| CAN-18 | HumHub Let's Meet 1.1.5 | Invitation notification stored XSS | [Details](advisories/CAN-18.md) |
-| CAN-19 | HumHub REST 0.11.5 | Bearer-auth response display-name XSS | [Details](advisories/CAN-19.md) |
+| CAN-01 | UReport 2.2.9 | Preview title reflected XSS | [Advisory](advisories/CAN-01.md) · [Issue #3](https://github.com/TERRENCE-REX/CVE/issues/3) |
+| CAN-02 | UReport 2.2.9 | `customParameters` JavaScript-string XSS | [Advisory](advisories/CAN-02.md) · [Issue #4](https://github.com/TERRENCE-REX/CVE/issues/4) |
+| CAN-03 | SpringBlade 5.0.2 | iframe route DOM XSS | [Advisory](advisories/CAN-03.md) · [Issue #5](https://github.com/TERRENCE-REX/CVE/issues/5) |
+| CAN-04 | UReport 2.2.9 | Decoded exception-message reflected XSS | [Advisory](advisories/CAN-04.md) · [Issue #6](https://github.com/TERRENCE-REX/CVE/issues/6) |
+| CAN-05 | UReport 2.2.9 | SQL-error stack stored XSS | [Advisory](advisories/CAN-05.md) · [Issue #7](https://github.com/TERRENCE-REX/CVE/issues/7) |
+| CAN-06 | UReport 2.2.9 | `link-url` attribute stored XSS | [Advisory](advisories/CAN-06.md) · [Issue #8](https://github.com/TERRENCE-REX/CVE/issues/8) |
+| CAN-07 | UReport 2.2.9 | Report-filename stored XSS in two views | [Advisory](advisories/CAN-07.md) · [Issue #9](https://github.com/TERRENCE-REX/CVE/issues/9) |
+| CAN-08 | UReport 2.2.9 | Chart-label script-element escape | [Advisory](advisories/CAN-08.md) · [Issue #10](https://github.com/TERRENCE-REX/CVE/issues/10) |
+| CAN-09 | UReport 2.2.9 | Font-family style-element escape | [Advisory](advisories/CAN-09.md) · [Issue #11](https://github.com/TERRENCE-REX/CVE/issues/11) |
+| CAN-10 | UReport 2.2.9 | Search-form label stored XSS | [Advisory](advisories/CAN-10.md) · [Issue #12](https://github.com/TERRENCE-REX/CVE/issues/12) |
+| CAN-11 | RuoYi 4.8.3 | Profile `userName` attribute stored XSS | [Advisory](advisories/CAN-11.md) · [Issue #13](https://github.com/TERRENCE-REX/CVE/issues/13) |
+| CAN-12 | RuoYi 4.8.3 | Menu icon attribute stored XSS | [Advisory](advisories/CAN-12.md) · [Issue #14](https://github.com/TERRENCE-REX/CVE/issues/14) |
+| CAN-13 | phpBB 3.3.19 | `rank_image` attribute stored XSS | [Advisory](advisories/CAN-13.md) · [Issue #15](https://github.com/TERRENCE-REX/CVE/issues/15) |
+| CAN-14 | HumHub 1.18.6 | FriendshipButton display-name stored XSS | [Advisory](advisories/CAN-14.md) · [Issue #16](https://github.com/TERRENCE-REX/CVE/issues/16) |
+| CAN-15 | HumHub User Location Map 1.2.5 | Popup stored XSS | [Advisory](advisories/CAN-15.md) · [Issue #17](https://github.com/TERRENCE-REX/CVE/issues/17) |
+| CAN-16 | ONLYOFFICE for HumHub 4.0.0 | Notification stored XSS | [Advisory](advisories/CAN-16.md) · [Issue #18](https://github.com/TERRENCE-REX/CVE/issues/18) |
+| CAN-17 | HumHub Q&A 1.1.3 | Answer display-name stored XSS | [Advisory](advisories/CAN-17.md) · [Issue #19](https://github.com/TERRENCE-REX/CVE/issues/19) |
+| CAN-18 | HumHub Let's Meet 1.1.5 | Invitation notification stored XSS | [Advisory](advisories/CAN-18.md) · [Issue #20](https://github.com/TERRENCE-REX/CVE/issues/20) |
+| CAN-19 | HumHub REST 0.11.5 | Bearer-auth response display-name XSS | [Advisory](advisories/CAN-19.md) · [Issue #21](https://github.com/TERRENCE-REX/CVE/issues/21) |
 
 ## Scope and contact
 
