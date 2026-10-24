@@ -90,22 +90,22 @@ Move chart data into an application/json element or external response and parse 
 
 ## Evidence images
 
-The three public evidence images show, in order:
+These are screenshots of real browser/tool interfaces captured with Google Chrome on macOS. They are not recreated evidence cards:
 
-1. The sanitized reproduction request, endpoint, parameter and payload structure.
-2. The three consecutive successful verification runs and exact response/DOM/database excerpts.
-3. The highlighted attacker-controlled source and unsafe rendering Sink.
+1. Chrome's native `view-source:` display of the saved trigger response or browser result, with the observed marker selected.
+2. Chrome's native `view-source:` display of an independent response, storage record, or browser-verification artifact.
+3. The official upstream GitHub source page with GitHub's native line highlighting on the vulnerable Sink.
 
-The images are compact reviewer captures rendered from saved raw HTTP/DOM/database evidence. They preserve the verified request, response/DOM evidence, and highlighted source-to-Sink path while redacting credentials and private deployment details.
+The first two screenshots reopen saved verification artifacts; they are not described as live requests. Private deployment addresses, credentials, session values, CSRF values, GUIDs and internal record identifiers are redacted. JSON whitespace was normalized for readability, and unrelated application records were omitted where a response contained other test-session data. The payload, affected field, response status and success booleans were retained.
 
-### Sanitized reproduction
+### Trigger response/result in Chrome
 
-![CAN-08 sanitized reproduction](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-08/01-reproduction-v2.png)
+![CAN-08 trigger response in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-08/01-trigger-chrome-v3.png)
 
-### Three-run success proof
+### Independent verification in Chrome
 
-![CAN-08 three-run success proof](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-08/02-success-proof-v2.png)
+![CAN-08 independent verification in Chrome](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-08/02-verification-chrome-v3.png)
 
-### Source-to-Sink evidence
+### Official source and Sink on GitHub
 
-![CAN-08 source-to-Sink evidence](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-08/03-source-sink-v2.png)
+![CAN-08 official source Sink](https://raw.githubusercontent.com/TERRENCE-REX/CVE/main/evidence/CAN-08/03-source-github-v3.png)
