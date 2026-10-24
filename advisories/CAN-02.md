@@ -42,22 +42,6 @@ blade-auth: bearer <JWT>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt48261022c3a` | raw JS-string breakout | **PASS** |
-| 2 | `gt48261022c3b` | raw JS-string breakout | **PASS** |
-| 3 | `gt48261022c3c` | raw JS-string breakout | **PASS** |
-
-```text
-Saved run-3 script excerpt:
-submitSearchForm("...","p=");}});self[`al`+`ert`](`gt48261022c3c`);(function(){function f(){//");
-
-The payload balances the remaining template braces and executes at page load.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

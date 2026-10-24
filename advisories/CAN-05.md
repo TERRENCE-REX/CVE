@@ -48,23 +48,6 @@ GET <BASE_URL>/blade-report/ureport/preview?_u=blade-gt48261022n1c.ureport.xml
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt48261022n1a` | DB error contains raw IMG | **PASS** |
-| 2 | `gt48261022n1b` | DB error contains raw IMG | **PASS** |
-| 3 | `gt48261022n1c` | DB error contains raw IMG | **PASS** |
-
-```text
-Saved run-3 preview excerpt:
-... SQL syntax ... near '<img src=x onerror=self[`al`+`ert`](`gt48261022n1c`)>' at line 1<br>
- at com.mysql.cj.jdbc.exceptions...
-
-The report definition was persisted before preview and removed after verification.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

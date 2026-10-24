@@ -54,28 +54,6 @@ GET <BASE_URL>/s/<SPACE_ID>/questions/question/view?id=<QUESTION_ID>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481023h4b` | raw=true; DOM exists=true | **PASS** |
-| 2 | `gt481023h4c` | raw=true; DOM exists=true | **PASS** |
-| 3 | `gt481023h4d` | raw=true; DOM exists=true | **PASS** |
-
-```text
-Saved run-3 browser/HTTP result:
-profile_status: 200
-answer_status: 200
-answer_raw_hit: true
-view_status: 200
-view_raw_hit: true
-browser.exists: true
-browser.outerHTML:
-<img id="gt481023h4d" src="x" onerror="self.x=4">
-ok: true
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

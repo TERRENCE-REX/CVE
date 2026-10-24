@@ -53,26 +53,6 @@ GET <BASE_URL>/notification/overview
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481023h5a` | HTTP 200; raw_hit=true | **PASS** |
-| 2 | `gt481023h5b` | HTTP 200; raw_hit=true | **PASS** |
-| 3 | `gt481023h5c` | HTTP 200; raw_hit=true | **PASS** |
-
-```text
-Saved notification response, run 3:
-<strong>Gt48 gt481023h5c</strong> invites you to vote on
-<strong><img id=gt481023h5c src=x onerror=self.x=5></strong>
-Let's Meet in the Space <strong>Project Workspace</strong>.
-
-status: 200
-raw_hit: true
-Meeting title was confirmed in storage during the run.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

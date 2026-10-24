@@ -53,28 +53,6 @@ roleId=1&pageNum=1&pageSize=50
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481022 + ry41` | code=0; exact userName returned | **PASS** |
-| 2 | `gt481022 + ry42` | code=0; exact userName returned | **PASS** |
-| 3 | `gt481022 + ry43` | code=0; exact userName returned | **PASS** |
-
-```text
-Saved allocatedList JSON, run 3:
-{
-  "total": 1,
-  "code": 0,
-  "userName": "gt481022\" onclick = eval(name)",
-  "email": "gt481022ry43@example.test"
-}
-
-Fresh run captured storage/response evidence. The vulnerable formatter below
-deterministically places the quote-breaking value into data-search.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

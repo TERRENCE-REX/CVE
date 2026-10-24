@@ -53,26 +53,6 @@ Cookie: <VICTIM_SESSION_COOKIE>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481023h3a` | HTTP 200; raw_hit=true | **PASS** |
-| 2 | `gt481023h3b` | HTTP 200; raw_hit=true | **PASS** |
-| 3 | `gt481023h3c` | HTTP 200; raw_hit=true | **PASS** |
-
-```text
-Saved notification response, run 3:
-<strong>Gt48 gt481023h3c</strong>
-... mentioned you in crawler-test-file.docx.
-<img id=gt481023h3c src=x onerror=self["pro"+"mpt"](3)>
-
-overview_status: 200
-raw_hit: true
-Stored Mention record: confirmed during the run.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

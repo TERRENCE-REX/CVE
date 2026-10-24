@@ -53,26 +53,6 @@ Cookie: <VICTIM_SESSION_COOKIE>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481023h2sa` | DB raw; response ×6 | **PASS** |
-| 2 | `gt481023h2ua` | DB raw; response ×6 | **PASS** |
-| 3 | `gt481023h2ta` | DB raw; response ×6 | **PASS** |
-
-```text
-Saved database value, run 3:
-<img id=gt481023h2ta src=x onerror=self.x=2>
-
-Saved /usermap/map serialization, run 3:
-"displayname":"<img id=gt481023h2ta src=x onerror=self.x=2>"
-"coords":{"latitude":52.52,"longitude":13.405}
-
-The same unencoded displayName reaches the Leaflet popup HTML string.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

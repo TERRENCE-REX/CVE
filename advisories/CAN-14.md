@@ -51,28 +51,6 @@ Cookie: <VICTIM_SESSION_COOKIE>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481023h1ra` | DB=true; modal IMG=true | **PASS** |
-| 2 | `gt481023h1rb` | DB=true; modal IMG=true | **PASS** |
-| 3 | `gt481023h1rc` | DB=true; modal IMG=true | **PASS** |
-
-```text
-Saved run-3 verification object:
-save_status: 200
-trigger_status: 200
-db_raw_hit: true
-browser_modal_img: true
-ok: true
-
-Decoded confirmation:
-Would you like to send a friendship request to
-<strong><img id=gt481023h1rc src=x onerror=self.x=1></strong>?
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

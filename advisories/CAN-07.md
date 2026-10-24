@@ -48,22 +48,6 @@ GET <BASE_URL>/blade-report/ureport/designer/loadReportProviders
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `n3a / r41a` | raw name in HTML and JS | **PASS** |
-| 2 | `n3b / r41b` | raw name in HTML and JS | **PASS** |
-| 3 | `n3c / r41c` | raw name in HTML and JS | **PASS** |
-
-```text
-Run-3 provider JSON name:
-fnlf<img src=x onerror=self[`al`+`ert`](`gt48261022n3c`)>.ureport.xml
-
-Run-3 preview script contains the second crafted filename directly in submitSearchForm("${file}", ...).
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

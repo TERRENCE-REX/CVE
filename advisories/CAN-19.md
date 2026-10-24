@@ -57,26 +57,6 @@ RestUserBearerToken[expirationTime]=
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481023h7a` | HTTP 200; raw_hit=true | **PASS** |
-| 2 | `gt481023h7b` | HTTP 200; raw_hit=true | **PASS** |
-| 3 | `gt481023h7c` | HTTP 200; raw_hit=true | **PASS** |
-
-```text
-Saved run-3 result:
-profile_status: 200
-form_status: 200
-response_status: 200
-raw_hit: true
-label_snippet:
-<label>Access Token for <img id=gt481023h7c src=x onerror=self.x=7></label>
-one_time_token_retained: false
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

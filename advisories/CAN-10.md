@@ -54,24 +54,6 @@ GET <BASE_URL>/blade-report/ureport/preview
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt48261022r44a` | raw IMG inside search label | **PASS** |
-| 2 | `gt48261022r44b` | raw IMG inside search label | **PASS** |
-| 3 | `gt48261022r44c` | raw IMG inside search label | **PASS** |
-
-```text
-Saved preview response, run 3:
-<span style='font-size:13px'><img src=x
-  onerror = self[`al`+`ert`](`gt48261022r44c`)></span>
-<input type='text' ... name='q' ...>
-
-The payload is a real IMG element, not escaped text.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

@@ -47,22 +47,6 @@ GET <BASE_URL>/blade-report/ureport/preview?_u=blade-gt48261022r42c.ureport.xml
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt48261022r42a` | literal </script> + IMG | **PASS** |
-| 2 | `gt48261022r42b` | literal </script> + IMG | **PASS** |
-| 3 | `gt48261022r42c` | literal </script> + IMG | **PASS** |
-
-```text
-Saved run-3 chart data:
-_buildChartDatas([{..."labels":["</script><img src=x onerror=self[`al`+`ert`](`gt48261022r42c`)>"]...}]);
-
-The browser's HTML parser closes the script element before JavaScript parsing.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

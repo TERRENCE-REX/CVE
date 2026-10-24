@@ -47,20 +47,6 @@ GET <BASE_URL>/blade-report/ureport/preview?_u=blade-gt48261022n2c.ureport.xml
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `gt48261022n2a` | href breakout + raw IMG | **PASS** |
-| 2 | `gt48261022n2b` | href breakout + raw IMG | **PASS** |
-| 3 | `gt48261022n2c` | href breakout + raw IMG | **PASS** |
-
-```text
-Saved run-3 response:
-<td class='_A1'><a href="x"><img src=x onerror=self[`al`+`ert`](`gt48261022n2c`)>" target="_self">CLICKME</a></td>
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 

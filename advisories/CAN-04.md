@@ -45,23 +45,6 @@ blade-auth: bearer <JWT>
 
 Authentication values, private host/IP values, internal identifiers, CSRF values, document keys and one-time tokens are redacted. Parameter names, affected endpoints and payload structure are retained.
 
-## Fresh verification evidence
-
-| Run | Marker | Observation | Result |
-| --- | --- | --- | --- |
-| 1 | `n4a / r45a` | 500; raw HTML; no safe MIME | **PASS** |
-| 2 | `n4b / r45b` | 500; raw HTML; no safe MIME | **PASS** |
-| 3 | `n4c / r45c` | 500; raw HTML; no safe MIME | **PASS** |
-
-```text
-Run-3 bodies:
-File [xx<img ... gt48261022n4c>] not found available report provider.
-Report [<img ... gt48261022r45c>] not support.
-
-HTTP status: 500. A safe HTML/text Content-Type was absent.
-```
-
-The evidence was generated from a researcher-controlled test deployment. Test records were cleaned after verification.
 
 ## Confirmed source and Sink
 
